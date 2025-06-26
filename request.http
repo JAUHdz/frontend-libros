@@ -1,0 +1,131 @@
+#personas
+###
+POST https://microservicioinenew.onrender.com/api/ine/crear HTTP/1.1
+Content-Type: application/json
+
+{
+  "nombre": "Alejandra",
+  "apellido_paterno": "Pérez",
+  "apellido_materno": "Gómez",
+  "curp": "PEPG900101HDFXXX18",
+  "fecha_nacimiento": "1998-07-01",
+  "sexo": "M",
+  "calle": "Calle Falsa",
+  "numero": "123",
+  "colonia": "Centro",
+  "municipio": "CDMX",
+  "estado": "Ciudad de México",
+  "cp": "06000",
+  "clave_elector": "ABC2234567890"
+}
+
+#consulta
+
+###
+GET https://microservicioinenew.onrender.com/api/ine/consulta HTTP/1.1
+
+#consulta por curp
+
+###
+GET https://microservicioinenew.onrender.com/api/ine/consulta/curp/PEPG900101HDFXXX18 HTTP/1.1
+
+#consulta por id
+
+###
+GET https://microservicioinenew.onrender.com/api/ine/consulta/id/8 HTTP/1.1
+
+#elimina por curp
+
+###
+DELETE https://microservicioinenew.onrender.com/api/ine/eliminar/curp/PEPG900101HDFXXX18 HTTP/1.1
+
+#profesiones
+
+###
+POST https://python-eic3.onrender.com/profesiones
+Content-Type: application/json
+
+{
+  "nombre": "Administrador",
+  "descripcion": "Encargado de procesos administrativos",
+  "estado_id": "123e4567-e89b-12d3-a456-426614174001"
+}
+
+# actualiza profesion por nombre
+
+###
+PUT https://python-eic3.onrender.com/profesiones/nombre/Ingeniero
+Content-Type: application/json
+
+{
+  "nombre": "Ingeniero",
+  "descripcion": "Encargado de obras civiles",
+  "estado_id": "123e4567-e89b-12d3-a456-426614174001"
+}
+
+# consulta profesiones
+
+###
+GET https://python-eic3.onrender.com/profesiones
+
+#consulta profesiones por nombre
+
+###
+GET https://python-eic3.onrender.com/profesiones/nombre/Administrador
+
+# consulta profesiones con el nombre de estado
+
+###
+GET https://python-eic3.onrender.com/profesiones_con_estado
+
+#profesionesusuario
+
+###
+POST https://microserviciopython-ji89.onrender.com/profesionesusuario
+Content-Type: application/json
+
+{
+  "persona_id": 8,
+  "profesion_id": "db552f9a-9760-4a70-b6ff-1fa29ee84805"
+}
+
+# consulta profesion usuario
+
+###
+GET https://microserviciopython-ji89.onrender.com/profesionesusuario
+
+#consulta profesion usuario por id profesion
+
+###
+GET https://microserviciopython-ji89.onrender.com/profesionesusuario/profesion/db552f9a-9760-4a70-b6ff-1fa29ee84805
+
+#consulta profesiones usuarios dando detalles de estado
+
+###
+GET https://microserviciopython-ji89.onrender.com/profesionesusuario/detalle
+
+
+#status
+
+###
+POST https://status-spring-app.onrender.com/status
+Content-Type: application/json
+
+{
+  "id": "123e4567-e89b-12d3-a456-426614174003",
+  "nombre": "Eliminado",
+  "fecha": "2025-05-28"
+}
+
+#consulta de estados
+
+###
+GET https://status-spring-app.onrender.com/status
+
+# consulta estado por nombre
+
+###
+GET https://status-spring-app.onrender.com/buscar?nombre=Activo
+
+###
+DELETE https://status-spring-app.onrender.com/eliminar?nombre=Activo

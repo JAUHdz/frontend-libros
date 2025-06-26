@@ -1,0 +1,21 @@
+.cont-libreria {
+  background: #fff;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.titulo {
+  color: #2c3e50;
+  margin-bottom: 1rem;
+}
+
+.libros {
+  list-style: none;
+  padding: 0;
+}
+
+.libros li {
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #eee;
+}

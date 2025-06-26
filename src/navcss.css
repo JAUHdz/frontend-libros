@@ -1,0 +1,15 @@
+.navbar{
+    background-color: #303030;
+    color: white;
+    height: 50px;
+    display: flex;
+    justify-content: end;
+}
+a{
+    text-decoration: none;
+    color: white;
+    padding: 15px;
+}
+a:hover{
+    color: rgb(105, 105, 105);
+}
