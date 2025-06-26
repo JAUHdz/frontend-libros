@@ -12,10 +12,10 @@ function App() {
     <>
     <nav className="navbar">
       <a href="/" className="nav">Inicio</a>
-      <a href="/detalle" className="nav">Detalle</a>
-      <a href="/crear" className="nav">Registrar</a>
-      <a href="/autores" className="nav">Autores</a>
-      <a href="/autores-admin" className="nav">Autores-Detalle</a>
+      <a href="/#/detalle" className="nav">Detalle</a>
+      <a href="/#/crear" className="nav">Registrar</a>
+      <a href="/#/autores" className="nav">Autores</a>
+      <a href="/#/autores-admin" className="nav">Autores-Detalle</a>
     </nav>
       <Routes>
         <Route path="/" element={<ListaLibros />} />
